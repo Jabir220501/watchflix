@@ -1,0 +1,363 @@
+// GLOBALS
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// VARIABLE
+$font-family: 'Roboto', sans-serif;
+
+// COLORS
+$white: #fff;
+$blue: #0F8BFD;
+$main-grey: #111;
+$grey: #161616;
+$light-grey: #2D2D31;
+$overlay: linear-gradient(269.96deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80%);
+$overlay-right: linear-gradient(269.66deg, #1D1D1D 3.45%, rgba(29, 29, 29, 0) 96.65%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $main-grey;
+  position: relative;
+  overflow-x: hidden;
+  color: white;
+}
+
+.content {
+  margin-left: 250px;
+  margin-top: 75px;
+  width: calc(100vw - 250px);
+  height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// TOPBAR
+#topbar {
+  color: $white;
+  height: 75px;
+  background: $light-grey;
+  border-bottom: 2px solid $blue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  #topbar__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    padding-right: 50px;
+
+    #topbar__logo {
+      width: 240px;
+
+      #logo__topbar {
+        h2 {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    #name_panel {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      height: 100%;
+      border-left: 1px solid $blue;
+
+      h2 {
+        margin-left: 10px;
+      }
+    }
+
+    #dashboard__profile {
+      img {
+        width: 25px;
+      }
+    }
+
+
+  }
+}
+
+
+// SIDEBAR
+.sidebar-toggle {
+  margin-left: -240px;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100%;
+  background: $light-grey;
+  position: fixed;
+  margin-top: 2px;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.sidebar #leftside-navigation ul,
+.sidebar #leftside-navigation ul ul {
+  margin: -2px 0 0;
+  padding: 0;
+}
+
+.sidebar #leftside-navigation ul li {
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar #leftside-navigation ul li.active>a {
+  color: #1abc9c;
+}
+
+.sidebar #leftside-navigation ul li.active ul {
+  display: block;
+}
+
+.sidebar #leftside-navigation ul li a {
+  color: #aeb2b7;
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+  font-size: 12px;
+  outline: 0;
+  transition: all 200ms ease-in;
+
+}
+
+.sidebar #leftside-navigation ul li a:hover {
+  color: $blue;
+}
+
+.sidebar #leftside-navigation ul li a a.active {
+  background-color: $blue;
+}
+
+.sidebar #leftside-navigation ul li a span {
+  display: inline-block;
+}
+
+.sidebar #leftside-navigation ul li a i {
+  width: 20px;
+}
+
+.sidebar #leftside-navigation ul li a i .fa-angle-left,
+.sidebar #leftside-navigation ul li a i .fa-angle-right {
+  padding-top: 3px;
+}
+
+.sidebar #leftside-navigation ul ul {
+  display: none;
+}
+
+.sidebar #leftside-navigation ul ul li {
+  background: #085db3;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: none;
+}
+
+.sidebar #leftside-navigation ul ul li a {
+  font-size: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #aeb2b7;
+}
+
+// MOVIE
+.container {
+  width: 80%;
+  margin-top: 90px;
+}
+
+.add_movie {
+  margin-bottom: 20px;
+  align-self: baseline;
+  background-color: rgb(0, 102, 255);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid $blue;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  height: 60px;
+}
+
+.add_movie {
+  border: none;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+
+.add_movie a {
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+
+.operations_form input {
+  border: none;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+
+.update {
+  background-color: $blue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: rgb(255, 38, 0);
+  cursor: pointer;
+}
+
+#operation {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  height: 250px;
+}
+
+.operation {
+  width: 250px;
+}
+
+// ADD MOVIE
+#add_movie_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 60px;
+
+  #import_fetch {
+    width: 100%;
+
+    #import_fetch_fields {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        margin-right: auto;
+
+      }
+
+      #input_fetch {
+        margin-right: auto;
+
+        input {
+          background-color: #313133;
+          width: 900px;
+          border: none;
+          border-radius: 5px;
+          padding: 5px 15px;
+          box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+          height: 44px;
+          font-size: 14px;
+          color: #f9f9f9;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  #movie_fields {
+    margin-top: 30px;
+    width: 100%;
+
+    hr {
+      margin-bottom: 45px;
+      border: 1px solid $light-grey;
+    }
+
+    #movie__form {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .field_section {
+        display: flex;
+        flex-direction: column;
+        min-width: 600px;
+
+        h2 {
+          margin-bottom: 30px;
+        }
+
+        .input_movie_info {
+          display: flex;
+          align-items: center;
+
+          label {
+            margin-right: 100px;
+            width: 150px;
+          }
+
+          input,
+          select {
+            background-color: $light-grey;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+            box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+            height: 44px;
+            font-size: 14px;
+            color: #f9f9f9;
+            margin-bottom: 20px;
+          }
+        }
+
+        .movie_description {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin-right: auto;
+            margin-bottom: 10px;
+          }
+
+          #movie_description {
+            margin-bottom: 20px;
+            width: 100%;
+            height: 200px;
+          }
+        }
+
+        .movie_poster, .movie_trailer{
+          border-bottom: 1px solid grey;
+        }
+      }
+    }
+  }
+}
