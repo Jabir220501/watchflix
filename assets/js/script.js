@@ -34,6 +34,4 @@ function autoSlide(){
   showSlide();
 }
 
-
-
 setInterval(autoSlide, 6500);

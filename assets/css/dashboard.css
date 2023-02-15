@@ -263,11 +263,13 @@ tr {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 40px;
 }
 #add_movie_container #movie_fields #movie__form .field_section {
   display: flex;
   flex-direction: column;
-  min-width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 #add_movie_container #movie_fields #movie__form .field_section h2 {
   margin-bottom: 30px;

@@ -22,12 +22,14 @@ if (
         header('location: ../auth/admin/dashboard.php/');
         session_start();
         $_SESSION["signedIn"] = true;
+        $_SESSION["admin"] = true;
         $_SESSION["name"] = $name;
 
     } elseif (mysqli_num_rows($result) > 0) {
         header('location: ../auth/dashboard/home.php');
         session_start();
         $_SESSION["signedIn"] = true;
+        $_SESSION["user"] = true;
         $_SESSION["name"] = $name;
     } else {
         header("location: ../auth/login?msg=Error: Email and password does not match, try again.");

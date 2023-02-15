@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!$_SESSION["admin"] == true){
+    header('location: ../../../');
+}
+
+if(!$_SESSION["user"] == true){
+    header('location: ../../../');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

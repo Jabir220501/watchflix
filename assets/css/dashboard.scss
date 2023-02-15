@@ -304,11 +304,13 @@ tr {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      gap: 40px;
 
       .field_section {
         display: flex;
         flex-direction: column;
-        min-width: 600px;
+        max-width: 600px;
+        width: 100%;
 
         h2 {
           margin-bottom: 30px;

@@ -1,6 +1,6 @@
 <div id="slideshow">
     <div class="movie">
-        <img src="https://image.tmdb.org/t/p/original/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg" alt="">
+        <img src="https://image.tmdb.org/t/p/original//s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg" alt="">
         <div class="info">
             <div id="genre">
                 <span>Science Fiction</span>
@@ -26,22 +26,10 @@
             ?>
         </div>
     </div>
-    <div class="movie">
-        <img src="https://image.tmdb.org/t/p/original//faXT8V80JRhnArTAeYXz0Eutpv9.jpg" alt="">
-    </div>
-    <div class="movie">
-        <img src="https://image.tmdb.org/t/p/original//s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg" alt="">
-    </div>
-
-    <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a id="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div id="director">
-        <div class="dot active" id="0" onclick="director(0)"></div>
-        <div class="dot" id="1" onclick="director(1)"></div>
-        <div class="dot" id="2" onclick="director(2)"></div>
-    </div>
-
     <div id="overlay"></div>
     <div id="overlay-right"></div>
+</div>
+<div id="backdrop_glass_reflection">
+    <img src="https://image.tmdb.org/t/p/original//s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg" alt="">
+    <div id="backdrop_glass_reflection_overlay"></div>
 </div>

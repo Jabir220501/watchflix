@@ -10,6 +10,7 @@
     <script src="./assets/js/script.js" defer></script>
 
     <script src="https://kit.fontawesome.com/779df3ae2b.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
