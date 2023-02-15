@@ -1,12 +1,12 @@
 <?php
 session_start();
-if(!$_SESSION["admin"] == true){
+if (
+    !isset($_SESSION["admin"])
+) {
     header('location: ../../../');
 }
 
-if(!$_SESSION["user"] == true){
-    header('location: ../../../');
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +43,7 @@ if(!$_SESSION["user"] == true){
         </div>
     </div>
 
-    <?php include '../../includes/dashboard/sidebar.php';?>
+    <?php include '../../includes/dashboard/sidebar.php'; ?>
 
     <div class="content">
         <h1>Work in Progress...</h1>
