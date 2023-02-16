@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 16 feb 2023 om 00:44
+-- Gegenereerd op: 16 feb 2023 om 22:59
 -- Serverversie: 10.4.27-MariaDB
 -- PHP-versie: 8.1.12
 
@@ -57,7 +57,10 @@ INSERT INTO `movie_video` (`id`, `video_access`, `tmdb_id`, `imdb_id`, `movie_ge
 (4, 'Free', '315162', 'tt3915174', 'Animation,', 'Yes', 'Puss in Boots: The Last Wish', 'Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.', '/kuf6dutpsT0vSVehic3EZIqkOBt.jpg', '/tGwO4xcBjhXC0p5qlkw37TrH6S6.jpg', '', '', '7.9', NULL, 'Inactive', '2023-02-12 20:44:46', NULL),
 (11, 'Free', '555604', 'tt1488589', 'Animation, Fantasy, Drama, ', 'Yes', 'Guillermo del Toro\'s Pinocchio', 'During the rise of fascism in Mussolini\'s Italy, a wooden boy brought magically to life struggles to live up to his father\'s expectations.', '/vx1u0uwxdlhV2MUzj4VlcMB0N6m.jpg', '/e782pDRAlu4BG0ahd777n8zfPzZ.jpg', '', '', '7.7', NULL, 'Active', '2023-02-12 22:24:41', NULL),
 (13, 'Paid', '335787', 'tt1464335', 'Action, Adventure, ', 'Yes', 'Uncharted', 'A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.', '/rJHC1RUORuUhtfNb4Npclx0xnOf.jpg', '/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg', '', '', '6.3', NULL, 'Active', '2023-02-15 17:07:35', NULL),
-(14, 'Free', '414906', 'tt1877830', 'Crime, Mystery, Thriller, ', 'No', 'The Batman', 'In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.', '/74xTEgt7R36Fpooo50r9T25onhq.jpg', '/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg', '', '', '7.8', NULL, 'Active', '2023-02-15 18:10:13', NULL);
+(14, 'Free', '414906', 'tt1877830', 'Crime, Mystery, Thriller, ', 'No', 'The Batman', 'In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.', '/74xTEgt7R36Fpooo50r9T25onhq.jpg', '/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg', '', '', '7.8', NULL, 'Active', '2023-02-15 18:10:13', NULL),
+(16, 'Free', '640146', 'tt10954600', 'Adventure, Science Fiction, Comedy, ', 'no', 'Ant-Man and the Wasp: Quantumania', 'Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope\'s parents Janet van Dyne and Hank Pym, and Scott\'s daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.', '/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg', '/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg', '', '', '6', NULL, 'Active', '2023-02-16 13:23:23', NULL),
+(17, 'Free', '76600', 'tt1630029', 'Science Fiction, Adventure, Action, ', 'No', 'Avatar: The Way of Water', 'Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.', '/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg', '/s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg', '', '', '7.8', NULL, 'Active', '2023-02-16 15:15:59', NULL),
+(18, 'Free', '615777', 'tt10640346', 'Drama, Comedy, ', 'No', 'Babylon', 'A tale of outsized ambition and outrageous excess, tracing the rise and fall of multiple characters in an era of unbridled decadence and depravity during Hollywood\'s transition from silent films and to sound films in the late 1920s.', '/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg', '/gwRMwljwHoNCyyJVgMA2XC4qPUU.jpg', '', '', '7.6', NULL, 'Active', '2023-02-16 15:16:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -174,7 +177,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT voor een tabel `movie_video`
 --
 ALTER TABLE `movie_video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT voor een tabel `recently_watched`
