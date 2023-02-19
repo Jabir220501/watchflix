@@ -633,6 +633,100 @@ footer #copyright {
   }
 }
 
+.actor_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11px;
+  font-size: clamp(1.875rem, 1.55rem + 1.625vw, 3.5rem);
+  font-weight: 500;
+}
+
+#actor {
+  margin-top: 100px;
+  overflow: hidden;
+  color: #fff;
+}
+#actor #actor-img_personal_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: clamp(1.4375rem, -1.075rem + 12.5625vw, 14rem);
+  padding-left: clamp(1.4375rem, -1.075rem + 12.5625vw, 14rem);
+}
+#actor #actor-img_personal_info img {
+  width: 240px;
+  margin-bottom: 13px;
+}
+#actor #actor-img_personal_info #personal_info {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#actor #actor-img_personal_info #personal_info h2 {
+  font-size: clamp(1.375rem, 1.3125rem + 0.3125vw, 1.6875rem);
+  margin-bottom: 20px;
+}
+#actor #actor-img_personal_info #personal_info #personal_info_info .personal_info_row {
+  margin-bottom: 16px;
+}
+#actor #actor-img_personal_info #personal_info #personal_info_info .personal_info_row h4 {
+  font-size: clamp(1.0625rem, 1.0125rem + 0.25vw, 1.3125rem);
+  font-weight: 500;
+}
+#actor #actor-img_personal_info #personal_info #personal_info_info .personal_info_row span {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-weight: 400;
+}
+#actor #biography__most_viewer .desktop_actor_name {
+  display: none;
+}
+#actor #biography__most_viewer #actor_biography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px;
+  padding-right: clamp(1.4375rem, -1.075rem + 12.5625vw, 14rem);
+  padding-left: clamp(1.4375rem, -1.075rem + 12.5625vw, 14rem);
+}
+#actor #biography__most_viewer #actor_biography h2 {
+  align-self: start;
+  font-size: 31px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#actor #biography__most_viewer #actor_biography p {
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-weight: 400;
+}
+@media (min-width: 1440px) {
+  #actor {
+    display: flex;
+    margin-top: 150px;
+  }
+  #actor #actor-img_personal_info {
+    margin-right: 80px;
+    display: unset;
+    padding-right: unset;
+  }
+  #actor #actor-img_personal_info img {
+    width: 395px;
+    height: 604px;
+  }
+  #actor #actor-img_personal_info .phone_actor_name {
+    display: none;
+  }
+  #actor #biography__most_viewer .desktop_actor_name {
+    display: block;
+  }
+  #actor #biography__most_viewer #actor_biography {
+    width: 51vw;
+    padding-left: unset;
+  }
+  #actor #biography__most_viewer #actor_biography p {
+    line-height: 30px;
+  }
+}
+
 #login__wrapper {
   position: relative;
   display: flex;

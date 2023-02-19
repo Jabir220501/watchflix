@@ -14,6 +14,7 @@ include './database/connection.php'
         $img = "https://image.tmdb.org/t/p/original/";
         $row = $result->fetch_assoc();
         while ($row = mysqli_fetch_assoc($result)) {
+            $movie_id = $row["tmdb_id"];
             $movie_poster = $row["video_poster"];
             $movie_genre = $row["movie_genre_id"];
             $movie_rating = $row["rating"];
@@ -21,7 +22,7 @@ include './database/connection.php'
 
             ?>
             <div class="movie_item">
-                <a href="#"><img src="<?php echo $img . $movie_poster ?>" alt=""></a>
+                <a href="<?php echo "./movie?id={$movie_id}" ?>"><img src="<?php echo $img . $movie_poster ?>" alt=""></a>
                 <div class="info_film">
                     <div class="genre">
                         <span>

@@ -9,7 +9,7 @@ include './database/connection.php'
     </div>
     <div class="main_movie a">
         <?php
-        $sql = "SELECT * FROM `movie_video` ORDER BY `movie_video`.`id` DESC";
+        $sql = "SELECT * FROM `movie_video` ORDER BY `movie_video`.`id` DESC LIMIT 10";
         $result = mysqli_query($conn, $sql);
         $img = "https://image.tmdb.org/t/p/original/";
         $row = $result->fetch_assoc();
@@ -18,7 +18,7 @@ include './database/connection.php'
             $movie_id = $row["tmdb_id"];
             $movie_poster = $row["video_poster"];
             $movie_genre = $row["movie_genre_id"];
-            $movie_rating = $row["rating"];
+            $movie_rating = $row["rating"]/2;
             $movie_name = $row["video_title"];
             ?>
             <div class="movie_item">

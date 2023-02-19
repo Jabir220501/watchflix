@@ -35,8 +35,8 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 6500);
-//
 
+// Actors
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const movieid = urlParams.get("id");
@@ -59,3 +59,5 @@ fetch(`${BASE_URL}${requestActor}?api_key=${API_KEY}`)
       }
     });
   });
+
+// Similar Movies

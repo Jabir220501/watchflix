@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
     <script src="./assets/js/script.js" defer></script>
 
     <script src="https://kit.fontawesome.com/779df3ae2b.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -20,12 +21,9 @@
         ?>
     </div>
 
-    <main>
-        <?php
-        include 'includes/movie_sliders/actors.php';
-        ?>
-    </main>
     <?php
+    include 'includes/movie_sliders/actors.php';
+    include 'includes/movie_sliders/similar_movies.php';
     include 'includes/footer/footer.php';
     ?>
 

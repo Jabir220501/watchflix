@@ -8,7 +8,7 @@ include '../../database/connection.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Users</title>
     <link rel="stylesheet" href="../../../assets/css/dashboard.css">
     <script src="../../../assets/js/dashboard.js" defer></script>
 
@@ -27,7 +27,7 @@ include '../../database/connection.php';
             </div>
 
             <div id="name_panel">
-                <h2>Movies</h2>
+                <h2>All Users</h2>
             </div>
 
             <div id="dashboard__profile">
@@ -40,30 +40,28 @@ include '../../database/connection.php';
     ?>
     <div class="content">
         <div class="container">
-            <button class="add_movie"><a href="../add-movie.php/">Add Movie</a></button>
+            <button class="add_movie"><a href="../add-movie.php/">Add User</a></button>
             <table>
                 <tr>
                     <th>ID</th>
-                    <th>Video Name</th>
-                    <th>Video ID</th>
-                    <th>Video Poster</th>
-                    <th>Upcoming</th>
-                    <th>Status</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>User Type</th>
+                    <th>User Image</th>
                     <th class="operation">Operations</th>
                 </tr>
                 <?php
-                $sql = "SELECT * FROM `movie_video`";
+                $sql = "SELECT * FROM `users`";
                 $result = mysqli_query($conn, $sql);
                 $img = "https://image.tmdb.org/t/p/original/";
 
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>
                     <td>" . $row['id'] . "</td>
-                    <td>" . $row['video_title'] . "</td>
-                    <td>" . $row['tmdb_id'] . "</td>
-                    <td><img width ='100px' src =" . $img . $row['video_poster'] . "></td>
-                    <td>" . $row['upcoming'] . "</td>
-                    <td>" . $row['status'] . "</td>
+                    <td>" . $row['name'] . "</td>
+                    <td>" . $row['email'] . "</td>
+                    <td>" . $row['usertype'] . "</td>
+                    <td>" . $row['user_image'] . "</td>
                     <td id='operation'>
                         <form action='../update-movie.php/' method='post' class='operations_form'> 
                             <input type='hidden' value ='" . $row['id'] . "' name='id'></input>

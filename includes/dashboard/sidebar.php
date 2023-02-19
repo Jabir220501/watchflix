@@ -18,7 +18,7 @@
                         class="arrow fa fa-angle-right pull-right"></i></a>
                 <ul>
 
-                    <li><a href="./">Shows</a>
+                    <li><a href="../series.php/">Shows</a>
                     </li>
                     <li><a href="ui-panels.html">Seasons</a>
                     </li>
@@ -54,7 +54,7 @@
                 <a href="javascript:void(0);"><i class="fa-solid fa-user"></i><span>Users</span><i
                         class="arrow fa fa-angle-right pull-right"></i></a>
                 <ul>
-                    <li><a href="map-google.html">Users</a>
+                    <li><a href="../users.php/">Users</a>
                     </li>
                     <li><a href="map-vector.html">Sub Admin</a>
                     </li>
