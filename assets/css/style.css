@@ -357,10 +357,8 @@ footer #copyright {
   }
   #slideshow-container #slideshow .movie {
     height: 660px;
-    -webkit-animation-name: fade;
-            animation-name: fade;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
+    animation-name: fade;
+    animation-duration: 0.6s;
   }
   #slideshow-container #slideshow .movie .info #genre {
     width: 130px;
@@ -377,14 +375,6 @@ footer #copyright {
     width: 635px;
     line-height: 30px;
     margin-bottom: 16px;
-  }
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
   @keyframes fade {
     from {
@@ -813,10 +803,6 @@ footer #copyright {
 }
 
 ::-moz-placeholder {
-  font-size: 0.7rem;
-}
-
-:-ms-input-placeholder {
   font-size: 0.7rem;
 }
 

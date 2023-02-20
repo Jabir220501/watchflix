@@ -36,7 +36,7 @@ const moviePoster = document.getElementById("movie_poster");
 const TrailerURL = document.getElementById("movie_trailer");
 const VideoFile = document.getElementById("movie_video");
 
-// API
+// SeriesAPI
 // Url's
 const base_url = "https://api.themoviedb.org/3";
 const base_urlOMDb = "https://www.omdbapi.com/";
@@ -49,6 +49,7 @@ const getMovies = "/movie/";
 const getSearch = "&query=";
 const getTrailer = "/videos";
 const getCredits = "/credits/";
+const getTv = "/tv/";
 const getMoviesOMDb = "?i=";
 
 fetchButton.addEventListener("click", () => {
@@ -83,12 +84,52 @@ fetchButton.addEventListener("click", () => {
             `${base_url}${getMovies}${movieDetails}${getTrailer}${apiKey}`
           ).then((response) =>
             response.json().then((trailer) => {
-              const _trailer = trailer.results[0].key
-              TrailerURL.value = `https://www.youtube.com/watch?v=${_trailer};`
+              const _trailer = trailer.results[0].key;
+              TrailerURL.value = `https://www.youtube.com/watch?v=${_trailer};`;
             })
           );
+        } else {
+          alert("Fill in a valid TMDb Movie ID");
+        }
+      })
+    );
+  }
+});
 
+// ADD Series
+// Fetch Fields
+const fetchButtonSeries = document.querySelector(".series_fetch_button");
+const fetchInputSeries = document.querySelector(".series_fetch_input");
 
+// Form Fields
+const seriesName = document.getElementById("series__name_input");
+const seriesDesc = document.getElementById("series_description");
+const seriesID = document.getElementById("series_id");
+let seriesGenre = document.getElementById("series_genre");
+const seriesActorId = document.getElementById("series_actor_id");
+const seriesDirectorId = document.getElementById("series_director_id");
+const seriesRating = document.getElementById("series_rating");
+const seriesBackdrop = document.getElementById("series_backdrop");
+const seriesPoster = document.getElementById("series_poster");
+
+// API
+fetchButton.addEventListener("click", () => {
+  const SeriesDetails = fetchInputSeries.value;
+  if (fetchInputSeries != "") {
+    fetch(`${base_url}${getTv}${SeriesDetails}${apiKey}`).then((response) =>
+      response.json().then((data) => {
+        console.log(data);
+        if (data.original_title != undefined) {
+          seriesName.value = data.original_title;
+          seriesDesc.value = data.overview;
+          seriesID.value = data.id;
+          imdb_seriesID.value = data.imdb_id;
+          seriesGenre.value = "";
+          for (let i = 0; i < data.genres.length; i++) {
+            seriesGenre.value += data.genres[i].name + ", ";
+          }
+          seriesBackdrop.value = data.backdrop_path;
+          seriesPoster.value = data.poster_path;
         } else {
           alert("Fill in a valid TMDb Movie ID");
         }

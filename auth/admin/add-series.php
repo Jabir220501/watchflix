@@ -27,7 +27,7 @@ include '../../database/connection.php';
             </div>
 
             <div id="name_panel">
-                <h2>Add Movie</h2>
+                <h2>Add Show</h2>
             </div>
 
             <div id="dashboard__profile">
@@ -47,8 +47,8 @@ include '../../database/connection.php';
                 <div id="import_fetch_fields">
                     <label>Import From TMDB</label>
                     <div id="input_fetch">
-                        <input type="text" placeholder="Enter TMDB Serie ID" id="fetch_input" value="">
-                        <button id="fetch_button">Fetch</button>
+                        <input type="text" placeholder="Enter TMDB Serie ID" id="fetch_input" class="series_fetch_input" value="">
+                        <button id="fetch_button" class="series_fetch_button">Fetch</button>
                     </div>
                 </div>
 
@@ -60,57 +60,57 @@ include '../../database/connection.php';
                     <div id="movie__section_form" class="field_section">
                         <h2>Serie Info</h2>
                         <div class="input_movie_info movie_name">
-                            <label for="movie_name">Serie Name</label>
-                            <input type="text" name="movie_name" id="movie__name_input" required>
+                            <label for="series_name">Serie Name</label>
+                            <input type="text" name="series_name" id="series__name_input" required>
                         </div>
                         <div class="input_movie_info movie_description">
-                            <label for="movie_description">Description</label>
-                            <textarea name="movie_description" id="movie_description" cols="30" rows="10" required></textarea>
+                            <label for="series_description">Description</label>
+                            <textarea name="series_description" id="series_description" cols="30" rows="10" required></textarea>
                         </div>
                         <div class="input_movie_info movie_id">
-                            <label for="movie_id">Serie ID</label>
-                            <input type="text" name="movie_id" id="movie_id">
+                            <label for="series_id">Serie ID</label>
+                            <input type="text" name="series_id" id="series_id">
                         </div>
                         <div class="input_movie_info movie_upcoming">
-                            <label for="movie_upcoming">Upcoming</label>
-                            <select name="movie_upcoming" id="movie_upcoming">
+                            <label for="series_upcoming">Upcoming</label>
+                            <select name="series_upcoming" id="series_upcoming">
                                 <option value="No">No</option>
                                 <option value="Yes">Yes</option>
                             </select>
                         </div>
                         <div class="input_movie_info movie_status">
-                            <label for="movie_status">Status</label>
-                            <select name="movie_status" id="movie_status">
+                            <label for="series_status">Status</label>
+                            <select name="series_status" id="series_status">
                                 <option value="Active">Active</option>
                                 <option value="Inactive">Inactive</option>
                             </select>
                         </div>
                         <div class="input_movie_info movie_genre">
-                            <label for="movie_genre">Genre</label>
-                            <input type="text" name="movie_genre" id="movie_genre">
+                            <label for="series_genre">Genre</label>
+                            <input type="text" name="series_genre" id="series_genre">
                         </div>
                         <div class="input_movie_info movie_actor_id">
-                            <label for="movie_actor_id">Actor ID</label>
-                            <input type="text" name="movie_actor_id" id="movie_actor_id">
+                            <label for="series_actor_id">Actor ID</label>
+                            <input type="text" name="series_actor_id" id="series_actor_id">
                         </div>
                         <div class="input_movie_info movie_director_id">
-                            <label for="movie_director_id">Director ID</label>
-                            <input type="text" name="movie_director_id" id="movie_director_id">
+                            <label for="series_director_id">Director ID</label>
+                            <input type="text" name="series_director_id" id="series_director_id">
                         </div>
                         <div class="input_movie_info movie_rating">
-                            <label for="movie_rating">Rating</label>
-                            <input type="text" name="movie_rating" id="movie_rating" required>
+                            <label for="series_rating">Rating</label>
+                            <input type="text" name="series_rating" id="series_rating" required>
                         </div>
                     </div>
                     <div id="movie_poster-backdrop-video_fields" class="field_section">
                         <h2>Poster, Thumbnail & Video</h2>
                         <div class="input_movie_info movie_backdrop">
-                            <label for="movie_backdrop">Movie Backdrop</label>
-                            <input type="text" name="movie_backdrop" id="movie_backdrop">
+                            <label for="series_backdrop">Movie Backdrop</label>
+                            <input type="text" name="series_backdrop" id="series_backdrop">
                         </div>
                         <div class="input_movie_info movie_poster">
-                            <label for="movie_poster">Movie Poster</label>
-                            <input type="text" name="movie_poster" id="movie_poster" required>
+                            <label for="series_poster">Movie Poster</label>
+                            <input type="text" name="series_poster" id="series_poster" required>
                         </div>
                         <div id="submitBtn">
                             <input type="submit" name="submit" value="Save" id="SubmitBTN">
