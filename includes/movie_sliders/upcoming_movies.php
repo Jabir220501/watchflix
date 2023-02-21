@@ -17,7 +17,7 @@ include './database/connection.php'
             $movie_id = $row["tmdb_id"];
             $movie_poster = $row["video_poster"];
             $movie_genre = $row["movie_genre_id"];
-            $movie_rating = $row["rating"];
+            $movie_rating = $row["rating"]/2;
             $movie_name = $row["video_title"];
 
             ?>

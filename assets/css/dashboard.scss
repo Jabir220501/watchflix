@@ -297,6 +297,7 @@ tr {
           color: white;
           border: none;
           font-weight: 500;
+          cursor: pointer;
         }
       }
     }
@@ -350,8 +351,8 @@ tr {
             margin-bottom: 20px;
           }
         }
-
-        .movie_description {
+        
+        .movie_description, .series_description  {
           display: flex;
           flex-direction: column;
 
@@ -360,7 +361,7 @@ tr {
             margin-bottom: 10px;
           }
 
-          #movie_description {
+          #movie_description, #series_description {
             margin-bottom: 20px;
             width: 100%;
             height: 200px;
@@ -381,6 +382,7 @@ tr {
         color: white;
         border: none;
         font-weight: 500;
+        cursor: pointer;
       }
     }
   }

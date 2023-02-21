@@ -17,17 +17,16 @@ for (let i = 0; i < navLinks.length; i++) {
   });
 }
 
-// ADD MOVIES
 // Fetch Fields
 const fetchButton = document.getElementById("fetch_button");
 const fetchInput = document.getElementById("fetch_input");
 
-// Form Fields
+// Form Fields Movies
 const movieName = document.getElementById("movie__name_input");
 const movieDesc = document.getElementById("movie_description");
 const movieID = document.getElementById("movie_id");
 const imdb_movieID = document.getElementById("imdb_movie_id");
-let movieGenre = document.getElementById("movie_genre");
+const movieGenre = document.getElementById("movie_genre");
 const movieActorId = document.getElementById("movie_actor_id");
 const movieDirectorId = document.getElementById("movie_director_id");
 const movieRating = document.getElementById("movie_rating");
@@ -36,15 +35,30 @@ const moviePoster = document.getElementById("movie_poster");
 const TrailerURL = document.getElementById("movie_trailer");
 const VideoFile = document.getElementById("movie_video");
 
-// SeriesAPI
-// Url's
+// Series Form
+const seriesForm = document.getElementById("series_form");
+
+// Fetch Fields
+const fetchButtonSeries = document.querySelector(".series_fetch_button");
+const fetchInputSeries = document.querySelector(".series_fetch_input");
+
+// Form Fields Series
+const seriesName = document.getElementById("series__name_input");
+const seriesDesc = document.getElementById("series_description");
+const seriesID = document.getElementById("series_id");
+const seriesGenre = document.getElementById("series_genre");
+const seriesActorId = document.getElementById("series_actor_id");
+const seriesDirectorId = document.getElementById("series_director_id");
+const seriesRating = document.getElementById("series_rating");
+const seriesBackdrop = document.getElementById("series_backdrop");
+const seriesPoster = document.getElementById("series_poster");
+
+// API Endpoints
 const base_url = "https://api.themoviedb.org/3";
 const base_urlOMDb = "https://www.omdbapi.com/";
 const image_url = "https://www.omdbapi.com/";
-// Api Key
 const apiKey = "?api_key=a527eb9bc54324ce4f762ac2b6d36ae6";
 const apiKeyOMDb = "&apikey=19fd28ae";
-//Request
 const getMovies = "/movie/";
 const getSearch = "&query=";
 const getTrailer = "/videos";
@@ -52,6 +66,7 @@ const getCredits = "/credits/";
 const getTv = "/tv/";
 const getMoviesOMDb = "?i=";
 
+// Movies
 fetchButton.addEventListener("click", () => {
   const movieDetails = fetchInput.value;
   if (fetchInput != "") {
@@ -96,40 +111,24 @@ fetchButton.addEventListener("click", () => {
   }
 });
 
-// ADD Series
-// Fetch Fields
-const fetchButtonSeries = document.querySelector(".series_fetch_button");
-const fetchInputSeries = document.querySelector(".series_fetch_input");
-
-// Form Fields
-const seriesName = document.getElementById("series__name_input");
-const seriesDesc = document.getElementById("series_description");
-const seriesID = document.getElementById("series_id");
-let seriesGenre = document.getElementById("series_genre");
-const seriesActorId = document.getElementById("series_actor_id");
-const seriesDirectorId = document.getElementById("series_director_id");
-const seriesRating = document.getElementById("series_rating");
-const seriesBackdrop = document.getElementById("series_backdrop");
-const seriesPoster = document.getElementById("series_poster");
-
-// API
-fetchButton.addEventListener("click", () => {
+// Series
+fetchButtonSeries.addEventListener("click", () => {
   const SeriesDetails = fetchInputSeries.value;
   if (fetchInputSeries != "") {
     fetch(`${base_url}${getTv}${SeriesDetails}${apiKey}`).then((response) =>
-      response.json().then((data) => {
-        console.log(data);
-        if (data.original_title != undefined) {
-          seriesName.value = data.original_title;
-          seriesDesc.value = data.overview;
-          seriesID.value = data.id;
-          imdb_seriesID.value = data.imdb_id;
+      response.json().then((shows) => {
+        console.log(shows);
+        if (shows.name != undefined) {
+          seriesName.value = shows.name;
+          seriesDesc.value = shows.overview;
+          seriesID.value = shows.id;
+          seriesRating.value = Math.round(shows.vote_average* 10) / 10
           seriesGenre.value = "";
-          for (let i = 0; i < data.genres.length; i++) {
-            seriesGenre.value += data.genres[i].name + ", ";
+          for (let i = 0; i < shows.genres.length; i++) {
+            seriesGenre.value += shows.genres[i].name + ", ";
           }
-          seriesBackdrop.value = data.backdrop_path;
-          seriesPoster.value = data.poster_path;
+          seriesBackdrop.value = shows.backdrop_path;
+          seriesPoster.value = shows.poster_path;
         } else {
           alert("Fill in a valid TMDb Movie ID");
         }

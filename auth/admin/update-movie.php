@@ -82,11 +82,11 @@ $row = mysqli_fetch_assoc($result);
                         </div>
                         <div class="input_movie_info movie_genre">
                             <label for="movie_genre">Genre</label>
-                            <input type="text" name="movie_genre" value="<?php echo $row['video_title'];?>" id="movie_genre">
+                            <input type="text" name="movie_genre" value="<?php echo $row['movie_genre_id'];?>" id="movie_genre">
                         </div>
                         <div class="input_movie_info movie_actor_id">
                             <label for="movie_actor_id">Actor ID</label>
-                            <input type="text" name="movie_actor_id" value="<?php echo $row['movie_genre_id'];?>" id="movie_actor_id">
+                            <input type="text" name="movie_actor_id" id="movie_actor_id">
                         </div>
                         <div class="input_movie_info movie_director_id">
                             <label for="movie_director_id">Director ID</label>

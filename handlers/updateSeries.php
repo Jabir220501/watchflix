@@ -6,6 +6,7 @@ if (
     isset($_POST["series_rating"]) &&
     isset($_POST["series_poster"])
 ) {
+    $id = $_POST["id"];
     $series_name = $conn->real_escape_string($_POST["series_name"]);
     $series_desc = $conn->real_escape_string($_POST["series_description"]);
     $series_ID = $_POST["series_id"];
@@ -18,8 +19,7 @@ if (
     $series_backdrop = $_POST["series_backdrop"];
     $series_poster = $_POST["series_poster"];
 
-    $sql = "INSERT INTO `series` (`series_genres`, `upcoming`, `series_name`, `series_info`, `series_poster`, `series_backdrop`, `tmdb_id`, `rating`) 
-    VALUES ('$series_genre', '$series_upcoming', '$series_name', '$series_desc', '$series_poster', '$series_backdrop', '$series_ID', '$series_rating')";
+    $sql = "UPDATE `series` SET `series_genres`='$series_genre',`upcoming`='$series_upcoming',`series_name`='$series_name',`series_info`='$series_desc', `series_poster`='$series_poster',`series_backdrop`='$series_backdrop',`tmdb_id`=' $series_ID',`rating`='$series_rating' WHERE $id";
     $result = mysqli_query($conn, $sql);
 
     header('location: ../auth/admin/series.php/');

@@ -65,11 +65,11 @@ include '../../database/connection.php';
                     <td>" . $row['upcoming'] . "</td>
                     <td>" . $row['status'] . "</td>
                     <td id='operation'>
-                        <form action='../update-movie.php/' method='post' class='operations_form'> 
+                        <form action='../update-series.php/' method='post' class='operations_form'> 
                             <input type='hidden' value ='" . $row['id'] . "' name='id'></input>
                             <input type='submit' name='submit' value='Update' class='update'></input>
                         </form>
-                        <form action='../../../handlers/delete.php' method='post' class='operations_form'> 
+                        <form action='../../../handlers/deleteSerie.php' method='post' class='operations_form'> 
                             <input type='hidden' value ='" . $row['id'] . "' name='id'></input>
                             <input type='submit' name='submit' value='Delete' class='delete'></input>
                         </form>

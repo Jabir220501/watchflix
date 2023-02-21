@@ -7,13 +7,12 @@ include './database/connection.php'
         <span class="movie_type"><a href="#">New releases</a></span>
         <span>&#10095;</span>
     </div>
-    <div class="main_movie a">
+    <div class="main_movie">
         <?php
         $sql = "SELECT * FROM `movie_video` ORDER BY `movie_video`.`id` DESC LIMIT 10";
         $result = mysqli_query($conn, $sql);
         $img = "https://image.tmdb.org/t/p/original/";
         $row = $result->fetch_assoc();
-
         while ($row = mysqli_fetch_assoc($result)) {
             $movie_id = $row["tmdb_id"];
             $movie_poster = $row["video_poster"];

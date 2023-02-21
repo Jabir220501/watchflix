@@ -6,6 +6,9 @@ include './database/connection.php';
         <span class="movie_type"><a href="#">Actors</a></span>
         <span>&#10095;</span>
     </div>
-    <div class="main_movie">
+    <div class="main_movie SeriesCast">
     </div>
 </div>
+<script>
+    
+</script>

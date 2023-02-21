@@ -260,6 +260,7 @@ tr {
   color: white;
   border: none;
   font-weight: 500;
+  cursor: pointer;
 }
 #add_movie_container #movie_fields {
   margin-top: 30px;
@@ -305,15 +306,15 @@ tr {
   color: #f9f9f9;
   margin-bottom: 20px;
 }
-#add_movie_container #movie_fields #movie__form .field_section .movie_description {
+#add_movie_container #movie_fields #movie__form .field_section .movie_description, #add_movie_container #movie_fields #movie__form .field_section .series_description {
   display: flex;
   flex-direction: column;
 }
-#add_movie_container #movie_fields #movie__form .field_section .movie_description label {
+#add_movie_container #movie_fields #movie__form .field_section .movie_description label, #add_movie_container #movie_fields #movie__form .field_section .series_description label {
   margin-right: auto;
   margin-bottom: 10px;
 }
-#add_movie_container #movie_fields #movie__form .field_section .movie_description #movie_description {
+#add_movie_container #movie_fields #movie__form .field_section .movie_description #movie_description, #add_movie_container #movie_fields #movie__form .field_section .movie_description #series_description, #add_movie_container #movie_fields #movie__form .field_section .series_description #movie_description, #add_movie_container #movie_fields #movie__form .field_section .series_description #series_description {
   margin-bottom: 20px;
   width: 100%;
   height: 200px;
@@ -331,4 +332,5 @@ tr {
   color: white;
   border: none;
   font-weight: 500;
+  cursor: pointer;
 }/*# sourceMappingURL=dashboard.css.map */
