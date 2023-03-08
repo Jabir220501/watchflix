@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 feb 2023 om 00:03
+-- Gegenereerd op: 21 feb 2023 om 19:00
 -- Serverversie: 10.4.27-MariaDB
 -- PHP-versie: 8.1.12
 
@@ -61,11 +61,14 @@ INSERT INTO `movie_video` (`id`, `video_access`, `tmdb_id`, `imdb_id`, `movie_ge
 (18, 'Free', '615777', 'tt10640346', 'Drama, Comedy, ', 'No', 'Babylon', 'A tale of outsized ambition and outrageous excess, tracing the rise and fall of multiple characters in an era of unbridled decadence and depravity during Hollywood\'s transition from silent films and to sound films in the late 1920s.', '/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg', '/gwRMwljwHoNCyyJVgMA2XC4qPUU.jpg', '', '', '7.6', NULL, 'Active', '2023-02-16 15:16:54', NULL),
 (19, 'Free', '436270', 'tt6443346', 'Black Adam', 'Yes', 'Black Adam', 'Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.', '/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg', '/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg', 'Fantasy, Action, Science Fiction, ', '', '6.4', NULL, 'Active', '2023-02-19 15:25:08', NULL),
 (20, 'Free', '1003580', 'tt22769820', 'Animation, Action, Science Fiction, ', 'No', 'Legion of Super-Heroes', 'Kara, devastated by the loss of Krypton, struggles to adjust to her new life on Earth. Her cousin, Superman, mentors her and suggests she leave their space-time to attend the Legion Academy in the 31st century, where she makes new friends and a new enemy: Brainiac 5. Meanwhile, she must contend with a mysterious group called the Dark Circle as it searches for a powerful weapon held in the Academy’s vault.', '/3whQLi8RI7h2h2Si2KTDFJxfEcR.jpg', '/jhi3K0rN46SSu9wEu6zYVCOeVtH.jpg', '', '', '5.8', NULL, 'Active', '2023-02-19 15:25:18', NULL),
-(22, 'Free', '1041513', 'tt22695080', 'Encanto at the Hollywood Bowl', 'Yes', 'Encanto at the Hollywood Bowl', 'A taped performance of the Encanto Live-to-Film Concert Experience at the Hollywood Bowl. The original cast puts on a miracle of a concert as they sing the favorite songs, accompanied by a full orchestra and 50 person ensemble, and the Hollywood Bowl transforms into Casita!', '/sa3Ku5yNVjp8NloWxJoI9dQjvOi.jpg', '/tsjXBo4LmzV0Bb9hdrz25tzX5GD.jpg', 'Music, ', '', '7.5', NULL, 'Active', '2023-02-19 15:25:42', NULL),
 (23, 'Free', '542196', 'tt7319486', 'War, Action, ', 'No', 'Wolf Hound', 'Inspired by the real-life German special operations unit KG 200 that shot down, repaired, and flew Allied aircraft as Trojan horses, \"Wolf Hound\" takes place in 1944 German-occupied France and follows the daring exploits of Jewish-American fighter pilot Captain David Holden. Ambushed behind enemy lines, Holden must rescue a captured B-17 Flying Fortress crew, evade a ruthless enemy stalking him at every turn, and foil a plot that could completely alter the outcome of World War II.', '/gHC0eFvXXNokP3sSNCTG2uks87R.jpg', '/vLPSvAt1CnfmDCeqG3zkFh0s6S4.jpg', '', '', '3.8', NULL, 'Active', '2023-02-19 15:25:57', NULL),
 (25, 'Free', '1045944', 'tt23546646', 'Animation, Family, Adventure, ', 'No', 'The Boss Baby: Christmas Bonus', 'Christmas Eve takes a twisty turn when the Boss Baby accidentally swaps places with one of Santa\'s elves and gets stranded at the North Pole.', '/iMmMxF6f2OonUrXrHKBLSYAhXly.jpg', '/nITzFbM1JS7WEvFjjGL0kCb2yPr.jpg', '', '', '5.2', NULL, 'Active', '2023-02-19 15:26:20', NULL),
-(31, 'Free', '634649', 'tt10872600', 'Spider-Man: No Way Homee', 'No', 'Spider-Man: No Way Home', 'Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.', '/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg', '/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg', 'Spider-Man: No Way Home', '', '8.2', NULL, 'Active', '2023-02-19 20:00:51', NULL),
-(32, 'Free', '399566', 'tt5034838', 'Godzilla vs. Konggg', 'No', 'Godzilla vs. Kong', 'In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.', '/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg', '/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg', 'Godzilla vs. Kong', '', '6.3', NULL, 'Active', '2023-02-19 20:57:25', NULL);
+(35, 'Free', '846433', 'tt14857730', 'Action, Thriller, Drama, ', 'No', 'The Enforcer', 'A noir thriller set in Miami, the film follows an enforcer who discovers his femme fatale boss has branched out into cyber sex trafficking, putting a young runaway he’s befriended at risk. He sacrifices everything to save the young girl from the deadly organization he’s spent his life building.', '/pXC8JJbfnRWtbD8i2yKFqqWEO4X.jpg', '/Aqldsq65Nj1KAkQD2MzkZsAk5N5.jpg', '', '', '5.2', NULL, 'Active', '2023-02-21 16:17:18', NULL),
+(36, 'Free', '599019', 'tt9719256', 'Animation, Family, Adventure, ', 'No', 'Big Trip 2: Special Delivery ', 'It has been a year since Mic Mic and Oscar returned from their incredible adventure. And now, after a diabolical plan by Vulture to sabotage the delivery of the Grizzly cub to his opponent in the American presidential elections, Mic Mic, Oscar, Panda teenager and Stork set off on another great adventure as they ride a zeppelin to return little Grizzly to its rightful parents and save the American elections and the whole continent from an erupting volcano.', '/dabXVfrAFfhDte8XVemom3mTJog.jpg', '/isGINC82PZmMblEJP2rBAvSlX37.jpg', '', '', '6.8', NULL, 'Active', '2023-02-21 16:19:58', NULL),
+(37, 'Free', '676547', 'tt9271672', 'Horror, Thriller, ', 'No', 'Prey for the Devil', 'In response to a global rise in demonic possessions, the Catholic Church reopens exorcism schools to train priests in the Rite of Exorcism. On this spiritual battlefield, an unlikely warrior rises: a young nun, Sister Ann. Thrust onto the spiritual frontline with fellow student Father Dante, Sister Ann finds herself in a battle for the soul of a young girl and soon realizes the Devil has her right where he wants her.', '/iCvgemXf2Kpr2LvpDmt5J9NhjKM.jpg', '/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg', '', '', '5.2', NULL, 'Active', '2023-02-21 16:20:46', NULL),
+(38, 'Free', '996727', 'tt15441472', 'Action, Thriller, Mystery, Crime, Horror, ', 'No', 'The Price We Pay', 'After a pawn shop robbery goes askew, two criminals take refuge at a remote farmhouse to try to let the heat die down, but find something much more menacing.', '/8fwJt0qZieQ7dKaiiqehObWpXYT.jpg', '/f9PSbuMeBS5CuHEOVyymg5lcq8J.jpg', '', '', '6.1', NULL, 'Active', '2023-02-21 16:21:03', NULL),
+(39, 'Free', '361743', 'tt1745960', 'Action, Drama, ', 'No', 'Top Gun: Maverick', 'After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.', '/62HCnUTziyWcpDaBO2i1DX17ljH.jpg', '/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg', '', '', '8.3', NULL, 'Active', '2023-02-21 16:21:17', NULL),
+(40, 'Free', '1003580', 'tt22769820', 'Animation, Action, Science Fiction, ', 'No', 'Legion of Super-Heroes', 'Kara, devastated by the loss of Krypton, struggles to adjust to her new life on Earth. Her cousin, Superman, mentors her and suggests she leave their space-time to attend the Legion Academy in the 31st century, where she makes new friends and a new enemy: Brainiac 5. Meanwhile, she must contend with a mysterious group called the Dark Circle as it searches for a powerful weapon held in the Academy’s vault.', '/3whQLi8RI7h2h2Si2KTDFJxfEcR.jpg', '/jhi3K0rN46SSu9wEu6zYVCOeVtH.jpg', '', '', '5.8', NULL, 'Active', '2023-02-21 16:21:36', NULL);
 
 -- --------------------------------------------------------
 
@@ -90,12 +93,13 @@ CREATE TABLE `series` (
   `id` int(11) NOT NULL,
   `series_lang_id` int(11) NOT NULL,
   `series_genres` text NOT NULL,
-  `upcoming` int(1) NOT NULL DEFAULT 0,
+  `upcoming` varchar(10) NOT NULL DEFAULT 'No',
   `series_access` varchar(255) NOT NULL DEFAULT 'Paid',
   `series_name` varchar(500) NOT NULL,
   `series_info` text NOT NULL,
   `director_id` text DEFAULT NULL,
   `series_poster` varchar(500) NOT NULL,
+  `series_backdrop` varchar(2555) NOT NULL,
   `tmdb_id` varchar(100) NOT NULL,
   `imdb_id` varchar(255) DEFAULT NULL,
   `rating` varchar(255) DEFAULT NULL,
@@ -106,8 +110,19 @@ CREATE TABLE `series` (
 -- Gegevens worden geëxporteerd voor tabel `series`
 --
 
-INSERT INTO `series` (`id`, `series_lang_id`, `series_genres`, `upcoming`, `series_access`, `series_name`, `series_info`, `director_id`, `series_poster`, `tmdb_id`, `imdb_id`, `rating`, `status`) VALUES
-(1, 2, '2,1,5', 0, 'Paid', 'The Terminal List', 'A former Navy SEAL officer investigates why his entire platoon was ambushed during a high-stakes covert mission.', NULL, 'upload/images/TheTerminalList-1.jpg', '', NULL, '8.2', 'Active');
+INSERT INTO `series` (`id`, `series_lang_id`, `series_genres`, `upcoming`, `series_access`, `series_name`, `series_info`, `director_id`, `series_poster`, `series_backdrop`, `tmdb_id`, `imdb_id`, `rating`, `status`) VALUES
+(26, 0, 'Animation, Action & Adventure, Sci-Fi & Fantasy, ', 'No', 'Paid', 'Avatar: The Last Airbender', 'In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.', NULL, '/cHFZA8Tlv03nKTGXhLOYOLtqoSm.jpg', '/nLKYAJCEi6OQVji1HJIxSQ74H9s.jpg', ' 246', NULL, '8.7', 'Active'),
+(30, 0, 'Action & Adventure, Animation, Drama, Family, Sci-Fi & Fantasy, ', 'No', 'Paid', 'The Legend of Korra', 'Avatar Korra, a headstrong, rebellious, feisty young woman who continually challenges and breaks with tradition, is on her quest to become a fully realized Avatar. In this story, the Avatar struggles to find balance within herself.', NULL, '/nhP0VGO2GSZbL4PUgmA6Vja48aM.jpg', '/hmrNfrUl3FFaymDj6Iw5oKQjIs2.jpg', '33880', NULL, '8.3', 'Active'),
+(31, 0, 'Drama, Action & Adventure, ', 'No', 'Paid', 'The Last of Us', 'Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.', NULL, '/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg', '/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg', '100088', NULL, '8.8', 'Active'),
+(32, 0, 'Crime, Drama, Soap, ', 'No', 'Paid', 'The Lord of the Skies', 'Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.', NULL, '/Ag7VUdnrRz5Qpq3Yn3E5OCvFnu0.jpg', '/iN9uULLaSx7h21tcR9io2dnARjw.jpg', '44953', NULL, '7.9', 'Active'),
+(33, 0, 'Sci-Fi & Fantasy, Drama, Action & Adventure, ', 'No', 'Paid', 'Game of Thrones', 'Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night\'s Watch, is all that stands between the realms of men and icy horrors beyond.', NULL, '/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg', '/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg', '1399', NULL, '8.4', 'Active'),
+(34, 0, 'Mystery, Crime, Drama, ', 'No', 'Paid', 'You', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.', NULL, '/7bEYwjUvlJW7GerM8GYmqwl4oS3.jpg', '/2ZNFu0hkSVtAI6LRWGIlCPNd1Tj.jpg', '78191', NULL, '8.1', 'Active'),
+(35, 0, 'Animation, Action & Adventure, Sci-Fi & Fantasy, ', 'No', 'Paid', 'Pokémon', 'Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.', NULL, '/rOuGm07PxBhEsK9TaGPRQVJQm1X.jpg', '/6pZNbFriwBLUdVfC2dWaV9UpEtj.jpg', '60572', NULL, '7.7', 'Active'),
+(36, 0, 'Animation, Sci-Fi & Fantasy, Action & Adventure, ', 'No', 'Paid', 'Dragon Ball Z', 'The adventures of Earth\'s martial arts defender, Son Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new extraterrestrial enemies.', NULL, '/jB9l4mp0bzBgzE5y4tvBH6AMeMk.jpg', '/ydf1CeiBLfdxiyNTpskM0802TKl.jpg', '12971', NULL, '8.3', 'Active'),
+(37, 0, 'Animation, Sci-Fi & Fantasy, Family, Action & Adventure, Comedy, ', 'No', 'Paid', 'The Owl House', 'An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda\'s apprentice at the Owl House and ultimately finds a new family in an unlikely setting.', NULL, '/zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg', '/cHyY5z4txdVyGtYMvBJhCqCcJso.jpg', '92685', NULL, '8.7', 'Active'),
+(38, 0, 'Animation, Action & Adventure, Sci-Fi & Fantasy, ', 'No', 'Paid', 'Naruto', 'In another world, ninja are the ultimate power, and in the Village Hidden in the Leaves live the stealthiest ninja in the land. Twelve years earlier, the fearsome Nine-Tailed Fox terrorized the village and claimed many lives before it was subdued and its spirit sealed within the body of a baby boy. That boy, Naruto Uzumaki, has grown up to become a ninja-in-training who\'s more interested in pranks than in studying ninjutsu.. but Naruto is determined to become the greatest ninja ever!', NULL, '/vauCEnR7CiyBDzRCeElKkCaXIYu.jpg', '/xuJ0F9RfKvVSJNDg2usurQ9WvY5.jpg', '46260', NULL, '8.4', 'Active'),
+(39, 0, 'Comedy, Drama, ', 'No', 'Paid', 'Ginny & Georgia', 'Angsty and awkward fifteen year old Ginny Miller often feels more mature than her thirty year old mother, the irresistible and dynamic Georgia Miller. After years on the run, Georgia desperately wants to put down roots in picturesque New England and give her family something they\'ve never had... a normal life. But it\'s not all carpool and Kombucha as Georgia\'s past threatens her and her family\'s new way of life... and Georgia will do anything to protect her family.', NULL, '/j1yqOSVVskSYpYreNT0VeD1S3Dq.jpg', '/hVMoqvXs5j9ffun56tZ5YhliSD9.jpg', '117581', NULL, '8.1', 'Active'),
+(40, 0, 'Crime, Drama, Mystery, Action & Adventure, ', 'No', 'Paid', 'Arrow', 'Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.', NULL, '/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg', '/vNnLAKmoczRlNarxyGrrw0KSOeX.jpg', '1412', NULL, '6.8', 'Active');
 
 -- --------------------------------------------------------
 
@@ -192,7 +207,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT voor een tabel `movie_video`
 --
 ALTER TABLE `movie_video`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT voor een tabel `recently_watched`
@@ -204,7 +219,7 @@ ALTER TABLE `recently_watched`
 -- AUTO_INCREMENT voor een tabel `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT voor een tabel `slider`
